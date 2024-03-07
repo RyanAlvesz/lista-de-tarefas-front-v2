@@ -1,0 +1,46 @@
+@keyframes aparecer {
+    0%{
+        opacity: -0%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+.scroll-bar::-webkit-scrollbar {
+    width: 6px;              
+}
+  
+.scroll-bar::-webkit-scrollbar-track {
+    background: none;        
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+    background-color: #9AB7CA;
+    border-radius: 32px;
+}
+
+.layout{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min-content, calc(50% - 6px)));
+    gap: 12px;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+
+.tarefas {
+    max-width: 100%;
+}
+
+@media not all and (min-width: 768px){
+    .layout {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 16px;
+    }
+    input[type=checkbox]:checked + span::before{
+        transform: translateX(26px); 
+    }    
+}
