@@ -15,3 +15,11 @@ botaoSair.addEventListener('click', () => {
 
 })
 
+const pageTitle = document.getElementById('page-title')
+const scroll = document.getElementById('scroll')
+pageTitle.addEventListener('click', () => {
+    scroll.scroll({
+        top: 0,
+        behavior: 'smooth'
+    })
+})

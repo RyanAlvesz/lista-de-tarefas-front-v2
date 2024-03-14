@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/tarefas.css">
     <link rel="stylesheet" href="../css/checkbox.css">
     <script defer src="../js/tarefas.js" type="module"></script>
-    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../../favicon.svg" type="image/x-icon">
     <title>Lista de Tarefas</title>
 </head>
 
@@ -50,117 +50,119 @@
                     Sair
                 </button>
             </nav>
-            <div class="border-l-[1px] border-solid border-cinzaclarinho grid grid-rows-[8vh_20vh_52vh]">
+            <div class="border-l-[1px] border-solid border-cinzaclarinho grid grid-rows-[8vh_72vh]">
                 <div class="flex items-center p-4 border-b-[1px] border-solid border-cinzaclarinho">
-                    <h2 class="font-semibold text-azulescuro text-2xl">Todas as Tarefas</h2>
+                    <h2 id="page-title" class="font-semibold text-azulescuro text-2xl cursor-pointer">Todas as Tarefas</h2>
                 </div>
-                <form action="#" class="border-b-[1px] border-solid border-cinzaclarinho px-4 py-3 grid grid-rows-[1fr_2fr_auto] gap-2">
-                    <input type="text" placeholder="Título..." class="focus:outline-none font-medium text-xl text-azulmedio placeholder:text-azulmedio placeholder:font-medium placeholder:text-xl">
-                    <textarea name="" id="" placeholder="Preciso fazer..." class="resize-none focus:outline-none placeholder:text-black"></textarea>
-                    <button class="bg-gradient-to-r from-azulclaro to-azulbonito text-white font-medium uppercase place-self-end px-4 py-3 rounded-md">Criar Tarefa</button>
-                </form>
-                <div class="overflow-y-scroll">
-                    <div class="grid grid-rows-[auto_1fr_1.7rem] w-full px-4 py-3 border-b-[1px] border-solid border-cinzaclarinho gap-4">
-                        <div class="flex items-center gap-2">
-                            <h3 class="font-semibold">Ryan</h3>
-                            <div class="bg-azulmedio w-1 h-1 rounded-full"></div>
-                            <span class="text-azulmedio">ra546038@gmail.com</span>
-                        </div>
-                        <div class="flex flex-col gap-1">
-                            <h3 class="text-base">Fazer compras</h3>
-                            <p class="text-black/60">Comprar sorvete</p>
-                        </div>
-                        <div class="h-full flex justify-between">
-                            <span class="font-semibold"> Não concluída </span>
-                            <div class="flex items-center justify-end h-full gap-6">
-                                <button class="h-full">
-                                    <a href="./tarefa.html" class="flex items-center gap-2 h-full w-full">
-                                        <img src="../img/svg/comment.svg" alt="Comentários" class="h-[90%]">
-                                        <span class="font-semibold">12</span>
-                                    </a>
-                                </button>
-                                <button class="h-full flex items-center gap-2">
-                                    <img src="../img/svg/heart.svg" alt="Like" class="h-full">
-                                    <span class="font-semibold">24</span>
-                                </button>
+                <div id="scroll" class="overflow-y-scroll flex flex-col">
+                    <form action="#" class="border-b-[1px] border-solid border-cinzaclarinho px-4 py-3 grid grid-rows-[1fr_2fr_auto] gap-2">
+                        <input type="text" placeholder="Título..." class="focus:outline-none font-medium text-xl text-azulmedio placeholder:text-azulmedio placeholder:font-medium placeholder:text-xl">
+                        <textarea name="" id="" placeholder="Preciso fazer..." class="resize-none focus:outline-none placeholder:text-black"></textarea>
+                        <button class="bg-gradient-to-r from-azulclaro to-azulbonito text-white font-medium uppercase place-self-end px-4 py-3 rounded-md">Criar Tarefa</button>
+                    </form>
+                    <div class="flex flex-col">
+                        <div class="grid grid-rows-[auto_1fr_1.7rem] w-full px-4 py-3 border-b-[1px] border-solid border-cinzaclarinho gap-4">
+                            <div class="flex items-center gap-2">
+                                <h3 class="font-semibold">Ryan</h3>
+                                <div class="bg-azulmedio w-1 h-1 rounded-full"></div>
+                                <span class="text-azulmedio">ra546038@gmail.com</span>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <h3 class="text-base">Fazer compras</h3>
+                                <p class="text-black/60">Comprar sorvete</p>
+                            </div>
+                            <div class="h-full flex justify-between">
+                                <span class="font-semibold"> Não concluída </span>
+                                <div class="flex items-center justify-end h-full gap-6">
+                                    <button class="h-full">
+                                        <a href="./tarefa.html" class="flex items-center gap-2 h-full w-full">
+                                            <img src="../img/svg/comment.svg" alt="Comentários" class="h-[90%]">
+                                            <span class="font-semibold">12</span>
+                                        </a>
+                                    </button>
+                                    <button class="h-full flex items-center gap-2">
+                                        <img src="../img/svg/heart.svg" alt="Like" class="h-full">
+                                        <span class="font-semibold">24</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid grid-rows-[auto_1fr_1.7rem] w-full px-4 py-3 border-b-[1px] border-solid border-cinzaclarinho gap-4 bg-azulclarinho/20">
-                        <div class="flex items-center gap-2">
-                            <h3 class="font-semibold">Ryan</h3>
-                            <div class="bg-azulmedio w-1 h-1 rounded-full"></div>
-                            <span class="text-azulmedio">ra546038@gmail.com</span>
-                        </div>
-                        <div class="flex flex-col gap-1">
-                            <h3 class="text-base">Fazer compras</h3>
-                            <p class="text-black/60">Comprar arroz</p>
-                        </div>
-                        <div class="h-full flex justify-between">
-                            <span class="font-semibold"> Concluída </span>
-                            <div class="flex items-center justify-end h-full gap-6">
-                                <button class="h-full">
-                                    <a href="./tarefa.html" class="flex items-center gap-2 h-full w-full">
-                                        <img src="../img/svg/comment.svg" alt="Comentários" class="h-[90%]">
-                                        <span class="font-semibold">12</span>
-                                    </a>
-                                </button>
-                                <button class="h-full flex items-center gap-2">
-                                    <img src="../img/svg/heart.svg" alt="Like" class="h-full">
-                                    <span class="font-semibold">24</span>
-                                </button>
+                        <div class="grid grid-rows-[auto_1fr_1.7rem] w-full px-4 py-3 border-b-[1px] border-solid border-cinzaclarinho gap-4 bg-azulclarinho/20">
+                            <div class="flex items-center gap-2">
+                                <h3 class="font-semibold">Ryan</h3>
+                                <div class="bg-azulmedio w-1 h-1 rounded-full"></div>
+                                <span class="text-azulmedio">ra546038@gmail.com</span>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <h3 class="text-base">Fazer compras</h3>
+                                <p class="text-black/60">Comprar arroz</p>
+                            </div>
+                            <div class="h-full flex justify-between">
+                                <span class="font-semibold"> Concluída </span>
+                                <div class="flex items-center justify-end h-full gap-6">
+                                    <button class="h-full">
+                                        <a href="./tarefa.html" class="flex items-center gap-2 h-full w-full">
+                                            <img src="../img/svg/comment.svg" alt="Comentários" class="h-[90%]">
+                                            <span class="font-semibold">12</span>
+                                        </a>
+                                    </button>
+                                    <button class="h-full flex items-center gap-2">
+                                        <img src="../img/svg/heart.svg" alt="Like" class="h-full">
+                                        <span class="font-semibold">24</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid grid-rows-[auto_1fr_1.7rem] w-full px-4 py-3 border-b-[1px] border-solid border-cinzaclarinho gap-4">
-                        <div class="flex items-center gap-2">
-                            <h3 class="font-semibold">Ryan</h3>
-                            <div class="bg-azulmedio w-1 h-1 rounded-full"></div>
-                            <span class="text-azulmedio">ra546038@gmail.com</span>
-                        </div>
-                        <div class="flex flex-col gap-1">
-                            <h3 class="text-base">Fazer compras</h3>
-                            <p class="text-black/60">Comprar sorvete</p>
-                        </div>
-                        <div class="h-full flex justify-between">
-                            <span class="font-semibold"> Não concluída </span>
-                            <div class="flex items-center justify-end h-full gap-6">
-                                <button class="h-full">
-                                    <a href="./tarefa.html" class="flex items-center gap-2 h-full w-full">
-                                        <img src="../img/svg/comment.svg" alt="Comentários" class="h-[90%]">
-                                        <span class="font-semibold">12</span>
-                                    </a>
-                                </button>
-                                <button class="h-full flex items-center gap-2">
-                                    <img src="../img/svg/heart.svg" alt="Like" class="h-full">
-                                    <span class="font-semibold">24</span>
-                                </button>
+                        <div class="grid grid-rows-[auto_1fr_1.7rem] w-full px-4 py-3 border-b-[1px] border-solid border-cinzaclarinho gap-4">
+                            <div class="flex items-center gap-2">
+                                <h3 class="font-semibold">Ryan</h3>
+                                <div class="bg-azulmedio w-1 h-1 rounded-full"></div>
+                                <span class="text-azulmedio">ra546038@gmail.com</span>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <h3 class="text-base">Fazer compras</h3>
+                                <p class="text-black/60">Comprar sorvete</p>
+                            </div>
+                            <div class="h-full flex justify-between">
+                                <span class="font-semibold"> Não concluída </span>
+                                <div class="flex items-center justify-end h-full gap-6">
+                                    <button class="h-full">
+                                        <a href="./tarefa.html" class="flex items-center gap-2 h-full w-full">
+                                            <img src="../img/svg/comment.svg" alt="Comentários" class="h-[90%]">
+                                            <span class="font-semibold">12</span>
+                                        </a>
+                                    </button>
+                                    <button class="h-full flex items-center gap-2">
+                                        <img src="../img/svg/heart.svg" alt="Like" class="h-full">
+                                        <span class="font-semibold">24</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid grid-rows-[auto_1fr_1.7rem] w-full px-4 py-3 border-b-[1px] border-solid border-cinzaclarinho gap-4 bg-azulclarinho/20">
-                        <div class="flex items-center gap-2">
-                            <h3 class="font-semibold">Ryan</h3>
-                            <div class="bg-azulmedio w-1 h-1 rounded-full"></div>
-                            <span class="text-azulmedio">ra546038@gmail.com</span>
-                        </div>
-                        <div class="flex flex-col gap-1">
-                            <h3 class="text-base">Fazer compras</h3>
-                            <p class="text-black/60">Comprar arroz</p>
-                        </div>
-                        <div class="h-full flex justify-between">
-                            <span class="font-semibold"> Concluída </span>
-                            <div class="flex items-center justify-end h-full gap-6">
-                                <button class="h-full">
-                                    <a href="./tarefa.html" class="flex items-center gap-2 h-full w-full">
-                                        <img src="../img/svg/comment.svg" alt="Comentários" class="h-[90%]">
-                                        <span class="font-semibold">12</span>
-                                    </a>
-                                </button>
-                                <button class="h-full flex items-center gap-2">
-                                    <img src="../img/svg/heart.svg" alt="Like" class="h-full">
-                                    <span class="font-semibold">24</span>
-                                </button>
+                        <div class="grid grid-rows-[auto_1fr_1.7rem] w-full px-4 py-3 border-b-[1px] border-solid border-cinzaclarinho gap-4 bg-azulclarinho/20">
+                            <div class="flex items-center gap-2">
+                                <h3 class="font-semibold">Ryan</h3>
+                                <div class="bg-azulmedio w-1 h-1 rounded-full"></div>
+                                <span class="text-azulmedio">ra546038@gmail.com</span>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <h3 class="text-base">Fazer compras</h3>
+                                <p class="text-black/60">Comprar arroz</p>
+                            </div>
+                            <div class="h-full flex justify-between">
+                                <span class="font-semibold"> Concluída </span>
+                                <div class="flex items-center justify-end h-full gap-6">
+                                    <button class="h-full">
+                                        <a href="./tarefa.html" class="flex items-center gap-2 h-full w-full">
+                                            <img src="../img/svg/comment.svg" alt="Comentários" class="h-[90%]">
+                                            <span class="font-semibold">12</span>
+                                        </a>
+                                    </button>
+                                    <button class="h-full flex items-center gap-2">
+                                        <img src="../img/svg/heart.svg" alt="Like" class="h-full">
+                                        <span class="font-semibold">24</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
