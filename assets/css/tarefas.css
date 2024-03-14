@@ -8,6 +8,10 @@
     }
 }
 
+*::-webkit-scrollbar{
+    display: none;
+}
+
 .scroll-bar::-webkit-scrollbar {
     width: 6px;              
 }

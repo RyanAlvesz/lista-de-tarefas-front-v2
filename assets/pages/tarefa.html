@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tarefas.css">
+    <script defer src="../js/tarefas.js" type="module"></script>
+    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
+    <title>Lista de Tarefas</title>
+</head>
+
+<body class="h-screen font-poppins">
+    <main class="h-full w-full fundo flex items-center justify-center relative">
+        <img src="../../assets/img/seagull1.png" alt="gaivotas" class="absolute top-5 right-5 max-md:hidden z-10">
+        <img src="../../assets/img/seagull2.png" alt="gaivotas"
+            class="absolute right-7 bottom-[4vh] max-md:hidden z-10">
+        <img src="../../assets/img/seagull3.png" alt="gaivotas"
+            class="absolute top-[25%] left-[5vw] max-md:hidden z-10">
+        <div class="w-full h-full bg-cinzaclaro/10 fixed pointer-events-none max-md:hidden">
+            <img src="../../assets/img/static.png" alt="granulado" class="w-full h-full opacity-10">
+        </div>
+        <section class="bg-white rounded-xl shadow-[0_0_15px_5px_#4D7B9F] z-10 w-[70vw] h-[80vh] grid grid-cols-[3fr_6fr] max-md:w-full max-md:h-full max-md:rounded-none max-md:gap-5 overflow-hidden">
+            <nav class="flex flex-col px-6 py-8 items-center justify-center">
+                <div class="flex w-full items-center gap-4">
+                    <img src="../../favicon.svg" alt="gaivotas" class="w-14 h-14">
+                    <h2 class="text-azulescuro text-2xl font-semibold">Lista de Tarefas</h2>
+                </div>
+                <div class="flex-grow w-full flex flex-col items-center justify-center gap-4">
+                    <p class="font-medium text-azulbonito text-[1.3rem] hover:font-semibold cursor-pointer"> Todas as
+                        Tarefas </p>
+                    <p class="font-medium text-azulbonito text-[1.3rem] hover:font-semibold cursor-pointer"> Suas
+                        Tarefas </p>
+                    <p class="font-medium text-azulbonito text-[1.3rem] hover:font-semibold cursor-pointer">
+                        Tarefas Privadas </p>
+                    <p class="font-medium text-azulbonito text-[1.3rem] hover:font-semibold cursor-pointer"> Tarefas
+                        Curtidas </p>
+                    <p class="font-medium text-azulbonito text-[1.3rem] hover:font-semibold cursor-pointer">
+                        <a href="./perfil.html" class="inline-block h-full w-full"> Perfil </a>
+                    </p>
+                </div>
+                <button id="sair"
+                    class="text-2xl bg-gradient-to-r from-vermelho to-azulbonito shadow-[0_0_5px_0_rgba(77,123,159,0.5)] text-white font-semibold py-4 px-6 w-[80%] hover:shadow-[0_0_5px_0_rgba(77,123,159,0.8)] hover:scale-[1.01] duration-150 ease-in rounded-xl max-md:py-3 max-md:w-4/5">
+                    Sair
+                </button>
+            </nav>
+            <div class="border-l-[1px] border-solid border-cinzaclarinho flex flex-col h-[80vh]">
+                <div class="flex items-center p-4 border-b-[1px] border-solid border-cinzaclarinho h-[8vh] flex-shrink-0">
+                    <button class="h-full">
+                        <a href="./tarefas.html" class="flex items-center gap-2 h-full w-full">
+                            <img src="../img/svg/seta-azul.svg" alt="Voltar" class="h-full">
+                            <h2 class="font-semibold text-azulescuro text-2xl"> Tarefa </h2>
+                        </a>
+                    </button>
+                </div>
+                <div class="grid grid-rows-[auto_1fr_1.7rem] w-full px-4 py-3 border-b-[1px] border-solid border-cinzaclarinho gap-4 flex-shrink-0">
+                    <div class="flex gap-2 items-center">
+                        <h3 class="font-semibold">Ryan</h3>
+                        <div class="bg-azulmedio w-1 h-1 rounded-full"></div>
+                        <span class="text-azulmedio">ra546038@gmail.com</span>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <h3 class="text-base">Fazer compras</h3>
+                        <p class="text-black/60">Comprar arroz</p>
+                    </div>
+                    <div class="h-full flex justify-between">
+                        <span class="font-semibold"> Concluída </span>
+                        <div class="flex items-center justify-end h-full gap-6">
+                            <button class="h-full">
+                                <a href="./tarefa.html" class="flex items-center gap-2 h-full w-full">
+                                    <img src="../img/svg/comment.svg" alt="Comentários" class="h-[90%]">
+                                    <span class="font-semibold">12</span>
+                                </a>
+                            </button>
+                            <button class="h-full flex items-center gap-2">
+                                <img src="../img/svg/heart.svg" alt="Like" class="h-full">
+                                <span class="font-semibold">24</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <form class="flex items-center justify-between px-4 border-b-[1px] border-solid border-cinzaclarinho h-[8vh] flex-shrink-0">
+                    <input type="text" placeholder="Escreva seu comentário" class="h-full w-full focus:outline-none px-2 bg-transparent">
+                    <button class="bg-gradient-to-r from-azulclaro to-azulbonito text-white font-medium uppercase px-4 py-2 rounded-md">
+                        Comentar
+                    </button>
+                </form>
+                <div class="flex flex-col overflow-y-auto">
+                    <div class="flex flex-col gap-2 p-4 border-b-[1px] border-solid border-cinzaclarinho">
+                        <div class="flex items-center gap-2">
+                            <h3 class="font-semibold">Gabriela</h3>
+                            <div class="bg-azulmedio w-1 h-1 rounded-full"></div>
+                            <span class="text-azulmedio">gabie@gmail.com</span>
+                        </div>
+                        <p> Você compra em qual mercado?</p>
+                    </div>
+                    <div class="flex flex-col gap-2 p-4 border-b-[1px] border-solid border-cinzaclarinho">
+                        <div class="flex items-center gap-2">
+                            <h3 class="font-semibold">Gabriela</h3>
+                            <div class="bg-azulmedio w-1 h-1 rounded-full"></div>
+                            <span class="text-azulmedio">gabie@gmail.com</span>
+                        </div>
+                        <p> To precisando tbm KKKKKK</p>
+                    </div>
+                    <div class="flex flex-col gap-2 p-4 border-b-[1px] border-solid border-cinzaclarinho">
+                        <div class="flex items-center gap-2">
+                            <h3 class="font-semibold">Gabriela</h3>
+                            <div class="bg-azulmedio w-1 h-1 rounded-full"></div>
+                            <span class="text-azulmedio">gabie@gmail.com</span>
+                        </div>
+                        <p> Você compra em qual mercado?</p>
+                    </div>
+                    <div class="flex flex-col gap-2 p-4 border-b-[1px] border-solid border-cinzaclarinho">
+                        <div class="flex items-center gap-2">
+                            <h3 class="font-semibold">Gabriela</h3>
+                            <div class="bg-azulmedio w-1 h-1 rounded-full"></div>
+                            <span class="text-azulmedio">gabie@gmail.com</span>
+                        </div>
+                        <p> To precisando tbm KKKKKK</p>
+                    </div>
+                    <div class="flex flex-col gap-2 p-4 border-b-[1px] border-solid border-cinzaclarinho">
+                        <div class="flex items-center gap-2">
+                            <h3 class="font-semibold">Gabriela</h3>
+                            <div class="bg-azulmedio w-1 h-1 rounded-full"></div>
+                            <span class="text-azulmedio">gabie@gmail.com</span>
+                        </div>
+                        <p> Você compra em qual mercado?</p>
+                    </div>
+                    <div class="flex flex-col gap-2 p-4 border-b-[1px] border-solid border-cinzaclarinho">
+                        <div class="flex items-center gap-2">
+                            <h3 class="font-semibold">Gabriela</h3>
+                            <div class="bg-azulmedio w-1 h-1 rounded-full"></div>
+                            <span class="text-azulmedio">gabie@gmail.com</span>
+                        </div>
+                        <p> To precisando tbm KKKKKK</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <audio src="../audio/grito.mp3" class="hidden" id="audio"></audio>
+    </main>
+</body>
+
+</html>
